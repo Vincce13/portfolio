@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vince — Web Developer</title>
+<link rel="icon" href="logo.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ambient background -->
+<div class="bg-ambient" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="particles"></div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="nav-mark">
+      <img src="logo.png" alt="VA Logo" class="nav-logo">
+    </a>
+
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <!-- Moon (shown in light mode) -->
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+        <!-- Sun (shown in dark mode) -->
+        <svg class="sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5" />
+          <path stroke-linecap="round" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+        </svg>
+      </button>
+
+      <!-- Hamburger button (visible only on mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu panel -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+     <div class="hero-photo-wrap">
+  <div class="hero-photo" id="photoFlip">
+    <div class="photo-front">
+      <img src="resume.png" alt="Vince at graduation">
+    </div>
+    <div class="photo-back">
+      <img src="secondp.png" alt="Vince">
+    </div>
+  </div>
+</div>
+      <div class="hero-text">
+        <div class="status-pill">Open to work</div>
+        <h1 class="name">Vince</h1>
+        <p class="tagline">
+          BSIT graduate who just shipped my first real web app — a full booking &amp; admin
+          system, not a to-do list. Looking for a junior developer role where I can keep building things people actually use.
+        </p>
+        <div class="hero-links">
+          <a href="#projects" class="btn btn-primary">See what I built</a>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="mono-label">01 / about</span>
+    </div>
+    <div class="about-body">
+      <p>
+        I graduated with a <strong>BS in Information Technology</strong> and this is my
+        first time applying for a developer role — so instead of a resume full of buzzwords,
+        I'm leading with something real I shipped: a working booking system with an admin
+        dashboard, built end-to-end.
+      </p>
+      <p>
+        I'm comfortable picking up a codebase, reading through existing logic, and extending
+        it — most of what I learned came from actually building and debugging, not just
+        coursework. I'm looking for a team where I can keep doing that, and keep learning
+        from people more experienced than me.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="mono-label">02 / stack</span>
+    </div>
+
+    <div class="skill-group">
+      <span class="skill-group-label">Languages</span>
+      <div class="pill-row">
+        <span class="pill">JavaScript</span>
+        <span class="pill">TypeScript</span>
+        <span class="pill">HTML</span>
+        <span class="pill">CSS</span>
+        <span class="pill">SQL</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <span class="skill-group-label">Frameworks &amp; Libraries</span>
+      <div class="pill-row">
+        <span class="pill">React</span>
+        <span class="pill">Next.js</span>
+        <span class="pill">Tailwind CSS</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <span class="skill-group-label">Tools &amp; Platforms</span>
+      <div class="pill-row">
+        <span class="pill">Supabase</span>
+        <span class="pill">Git / GitHub</span>
+        <span class="pill">Vercel</span>
+        <span class="pill">VS Code</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="mono-label">03 / releases</span>
+    </div>
+
+    <div class="release">
+      <div class="release-top">
+        <span class="version-tag">v1.0.0</span>
+        <span class="release-date">Shipped 2026</span>
+      </div>
+      <h3>Court Booking &amp; Admin System</h3>
+      <p>
+        A full booking platform for a sports court business — customers book hourly slots
+        online, and admins manage everything from one dashboard: confirming or cancelling
+        bookings, rescheduling, extending sessions, processing weather refunds, blocking
+        slots for maintenance, and running "Open Play" group sessions with per-participant
+        check-in.
+      </p>
+      <ul class="release-notes">
+        <li>Built the admin dashboard: booking status workflow (pending → confirmed → completed/cancelled/refunded), with grouped multi-hour bookings</li>
+        <li>Implemented a rain-refund calculator that pro-rates unused booking time by the minute</li>
+        <li>Built reschedule and hour-extension flows with real-time slot-conflict checks</li>
+        <li>Added a day-schedule view that merges bookings, blocked slots, and Open Play sessions into one hourly grid</li>
+        <li>Wired up automatic email notifications on status changes</li>
+      </ul>
+      <div class="release-stack">
+        <span>Next.js</span>
+        <span>React</span>
+        <span>Tailwind CSS</span>
+        <span>Supabase</span>
+      </div>
+      <div class="release-links">
+        <a href="https://tdacourt.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo →</a>
+        <a href="https://github.com/Vincce13/pickleball-court" target="_blank" rel="noopener noreferrer">View code →</a>
+      </div>
+    </div>
+
+    <div class="release release-empty">
+      <span class="mono-label" style="margin-bottom:4px;">v1.1.0 — in progress</span>
+      <h3>Your next project goes here</h3>
+      <p>Keep this slot open — swap it in as soon as you ship the next one.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="mono-label">04 / contact</span>
+    </div>
+    <p class="contact-intro">
+      I'm actively looking for a junior developer role. If you've got one, or just want
+      to talk about what I built, send a message below.
+    </p>
+
+    <form action="#" method="POST">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@company.com" required>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Let's talk..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="justify-self:start;">Send message</button>
+      <p class="form-note">Note: this form isn't wired up to send anything yet — see the setup note below.</p>
+    </form>
+
+    <div class="contact-alt">
+      <a href="mailto:vinceryan92@gmail.com">vinceryan92@gmail.com</a>
+      <a href="https://github.com/Vincce13" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Built by Vince · Last deployed 2026</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
