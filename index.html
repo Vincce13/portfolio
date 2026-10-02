@@ -33,6 +33,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#designs">Designs</a></li><!-- NEW -->
         <li><a href="#contact">Contact</a></li>
       </ul>
 
@@ -62,6 +63,7 @@
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#designs">Designs</a><!-- NEW -->
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -203,10 +205,49 @@
   </div>
 </section>
 
+<!-- ============================================================
+     NEW: GRAPHIC DESIGNS SECTION
+     ============================================================ -->
+<section id="designs">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="mono-label">04 / designs</span>
+    </div>
+
+    <p class="designs-intro">
+      Outside of code, I also do graphic design. Here are some of my works.
+    </p>
+
+    <div class="design-grid">
+
+      <!-- 👉 DESIGN #1: change the src to your image file, then edit the title/description -->
+      <button class="design-item" data-title="Poster Design" data-desc="Short description here">
+        <img src="day5.png" alt="Poster design" loading="lazy">
+        <span class="design-caption">Graphic Art Design</span>
+      </button>
+
+      <!-- 👉 DESIGN #2 -->
+      <button class="design-item" data-title="Logo Design" data-desc="Short description here">
+        <img src="Untitled-2.png" alt="Logo design" loading="lazy">
+        <span class="design-caption">Sports Graphic Design</span>
+      </button>
+
+      <!-- 👉 DESIGN #3 -->
+      <button class="design-item" data-title="Social Media Post" data-desc="Short description here">
+        <img src="space-2.png" alt="Social media post design" loading="lazy">
+        <span class="design-caption">Socail Media Promo Banner</span>
+      </button>
+
+      <!-- 👉 WANT MORE? Copy one whole <button>...</button> block above and paste it here -->
+
+    </div>
+  </div>
+</section>
+
 <section id="contact">
   <div class="wrap">
     <div class="section-head">
-      <span class="mono-label">04 / contact</span>
+      <span class="mono-label">05 / contact</span>
     </div>
     <p class="contact-intro">
       I'm actively looking for a junior developer role. If you've got one, or just want
@@ -243,6 +284,15 @@
     <p>Built by Vince · Last deployed 2026</p>
   </div>
 </footer>
+
+<!-- NEW: Lightbox (click-to-enlarge popup for designs) -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <figure>
+    <img id="lightboxImg" src="" alt="">
+    <figcaption id="lightboxCap"></figcaption>
+  </figure>
+</div>
 
 <script src="script.js"></script>
 
